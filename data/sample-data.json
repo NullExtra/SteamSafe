@@ -1,0 +1,10 @@
+{
+  "device_id": "steamsafe-001",
+  "timestamp": "2026-10-22T14:00:00+07:00",
+  "water_state": "DRY",
+  "water_status": "NORMAL",
+  "teg_voltage_v": 0.8,
+  "teg_current_ma": 10.0,
+  "teg_power_mw": 8.0,
+  "data_source": "SIMULATED"
+}
