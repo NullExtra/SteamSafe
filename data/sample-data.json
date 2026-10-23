@@ -3,6 +3,7 @@
   "timestamp": "2026-10-22T14:00:00+07:00",
   "water_state": "DRY",
   "water_status": "NORMAL",
+  "pressure_bar": null,
   "teg_voltage_v": 0.8,
   "teg_current_ma": 10.0,
   "teg_power_mw": 8.0,

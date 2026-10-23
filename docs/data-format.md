@@ -18,6 +18,7 @@ Setiap data telemetry menggunakan format JSON dengan field berikut.
 | timestamp | String | Waktu data dibuat dalam format ISO 8601 |
 | water_state | String atau null | Kondisi rain sensor |
 | water_status | String | Status hasil pengolahan sensor |
+| pressure_bar | Number atau null | Tekanan boiler dalam bar |
 | teg_voltage_v | Number | Tegangan TEG dalam volt |
 | teg_current_ma | Number | Arus TEG dalam miliampere |
 | teg_power_mw | Number | Daya TEG dalam miliwatt |
@@ -43,6 +44,14 @@ Setiap data telemetry menggunakan format JSON dengan field berikut.
 - HARDWARE: data berasal dari perangkat fisik.
 
 Selama Sprint 1, data yang digunakan adalah SIMULATED.
+
+### pressure_bar
+
+- Nilai tekanan boiler dalam satuan bar.
+- Diisi null kalau pembacaan tekanan belum tersedia.
+- Sensor tekanan belum ada di Sprint 1, jadi field ini masih null.
+  Field disiapkan lebih awal supaya dashboard dan backend tidak perlu
+  mengubah struktur data saat sensornya ditambahkan.
 
 ## 4. Aturan Timestamp
 
